@@ -1,0 +1,230 @@
+/* pages/menu/postpaid/postpaid.wxss */
+page {
+  background-color: #f5f5f5;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.header {
+  width: 750rpx;
+}
+.header-img {
+  width: 100%;
+}
+.info {
+  position: relative;
+  width: 690rpx;
+  margin: -7% 4% 0;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.operator {
+  padding: 40rpx 20rpx 100rpx;
+}
+.operator-name {
+  position: absolute;
+  left: 20rpx;
+  top: 54rpx;
+  font-weight: 700;
+  font-size: 32rpx;
+  color: #535e7c;
+}
+.select_box{
+  background: #fff;
+  width: 74%;
+  left: 130rpx;
+  padding-left: 170rpx;
+  border-bottom: 1px solid #eee;
+}
+.select{
+  box-sizing: border-box;
+  width: 100%;
+  height: 70rpx;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+}
+.select_text{
+  font-size: 30rpx;
+  color: #a0a4b0;
+  flex: 1;
+}
+.select_img{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  transition:transform 0.3s;
+}
+.select_img_rotate{
+  transform:rotate(180deg);
+}
+.option_box{
+  position: absolute;
+  top: 112rpx;
+  right: -179rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background: #fff;
+  transition: height 0.3s;
+  z-index: 1000;
+}
+.option{
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  color: #a0a4b0;
+  padding: 10rpx;
+}
+.account {
+  display: flex;
+  border-bottom: 1px solid #efefef;
+  padding: 30rpx 0;
+}
+.account-name {
+  color: #535e7c;
+  font-weight: 700;
+  font-size: 32rpx;
+}
+.account-img-box {
+  width: 30rpx;
+  height: 30rpx;
+  margin: 4rpx 66rpx 8rpx 10rpx;
+}
+.account-img {
+  width: 100%;
+  height: 100%;
+}
+.account-text {
+  height: 100%;
+  color: #757575;
+  font-size: 30rpx;
+}
+.money {
+  color: #535e7c;
+}
+.money-warning-box-top {
+  width: 100%;
+  margin: 10rpx 0 80rpx 0;
+}
+.money-warning-img-box {
+  float: left;
+  width: 30rpx;
+  height: 30rpx;
+  margin: 2rpx 10rpx 0 0;
+}
+.money-warning-img {
+  width: 100%;
+  height: 100%;
+}
+.money-warning {
+  float: left;
+  color: #bc523c;
+  font-size: 28rpx;
+}
+.money-warning-box-bottom {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #efefef;
+}
+.money-name {
+  float: left;
+  margin-right: 12rpx;
+  font-weight: 700;
+  font-size: 32rpx;
+}
+.money-text-box {
+  margin-bottom: 20rpx;
+}
+.money-text {
+  height: 100%;
+  color: #757575;
+  font-size: 30rpx;
+}
+.mobile {
+  color: #535e7c;
+}
+.mobile-warning-box-top {
+  width: 100%;
+  margin: 10rpx 0 80rpx 0;
+}
+.mobile-warning-img-box {
+  float: left;
+  width: 30rpx;
+  height: 30rpx;
+  margin: 5rpx 10rpx 0 0;
+}
+.mobile-warning-img {
+  width: 100%;
+  height: 100%;
+  margin-top: 10rpx;
+}
+.mobile-warning {
+  float: left;
+  color: #bc523c;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+.mobile-warning-box-bottom {
+  width: 100%;
+  border-bottom: 1px solid #efefef;
+}
+.mobile-name {
+  float: left;
+  margin-right: 43rpx;
+  font-weight: 700;
+  font-size: 32rpx;
+}
+.mobile-text-box {
+  padding-bottom: 20rpx;
+}
+.mobile-text {
+  height: 100%;
+  color: #757575;
+  font-size: 30rpx;
+}
+.remark {
+  margin-top: 10rpx;
+}
+.remark-name-front {
+color: #535e7c;
+font-weight: 700;
+}
+.remark-name {
+  padding: 50rpx 0  0 0;
+  font-size: 32rpx;
+}
+.remark-name-queen {
+  font-size: 32rpx;
+  margin: 0 0 0 20rpx;
+  color: #a0a4b0;
+}
+.remark-inport-box {
+  margin-top: 20rpx;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 20rpx;
+}
+.remark-inport {
+  width: 100%;
+  height: 70rpx;
+}
+.order {
+  position: fixed;
+  left: 0;
+  bottom: 20rpx;
+  width: 92%;
+  padding: 0 30rpx;
+}
+.order-btn {
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 30rpx;
+  background: #ff5266;
+  color: #fff;
+}

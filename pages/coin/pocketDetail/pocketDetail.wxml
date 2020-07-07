@@ -1,0 +1,46 @@
+<!--pages/coin/pocketDetail/pocketDetail.wxml-->
+<view class="pocketDetail">
+      <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+          <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">全部</view>
+          <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">未使用</view>
+          <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">已使用</view>
+          <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">已过期</view>
+      </scroll-view>
+      <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+       style="height:{{winHeight}}rpx">
+
+        <swiper-item class="{{currentTab == 0}}">
+          <scroll-view scroll-y="true" class="scoll-h" >
+            <view class="pocket-list-container">
+              <view class="ul-profile">
+                <view class="li clearfix" wx:for="{{packetList}}" wx:key="index">
+                    <view class="left-profile">
+                        <view class="item-box">
+                            <view class="item-amount">{{ item.amount }}</view>
+                            <view class="item-type">{{ item.category }}</view>
+                        </view>
+                    </view>
+                    <view class="item-content">
+                        <view class="title">{{ item.msg_alert_first }}</view>
+                        <view class="pocket-msg">{{ item.msg_alert_second }}</view>
+                        <view class="pocket-msg">{{ item.msg_alert_third }}</view>
+                        <view class="pocket-msg warn">{{ item.msg_alert_fourth }}</view>
+                    </view>
+                    <view class="right-profile used" wx:if="item.currentTab == 3">
+                        <view class="use-btn">已过期</view>
+                    </view>
+                    <view class="right-profile" wx:elif="item.currentTab == 1">
+                        <view class="use-btn">立即使用</view>
+                    </view>
+                    <view class="right-profile used" wx:elif="item.currentTab == 2">
+                        <view class="use-btn">已使用</view>
+                    </view>
+                    <view class="expire-warn" wx:if="item.msg_state == '快过期'"></view> 
+                </view>
+              </view>
+            </view>
+          </scroll-view>
+        </swiper-item>
+      </swiper>
+
+</view>

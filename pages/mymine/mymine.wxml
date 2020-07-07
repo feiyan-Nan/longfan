@@ -1,0 +1,97 @@
+<!--pages/mymine/mymine.wxml-->
+
+  <view class="mymine">
+  <view class="mine-header">
+      <view class="mine-top">
+        <image class="mine-top-img" src="../../assets/images/user-profile-bg.png" mode="aspectFit" />      
+      </view>
+      <view class="mine-user">
+          <view class="mine-user-left">
+            <image class="mine-user-left-img" src="../../assets/images/article1.png" mode="aspectFill" />            
+          </view>
+            <view class="mine-user-right">
+            <text class="username" selectable="false">
+              username
+            </text>
+            </view>
+      </view>
+      <view class="user-balance ">
+        <view class="user-balance-left">
+          <text class="balance-o">￥0.00
+            </text>
+          <text class="balance-t">红包金额</text> 
+        </view>
+          <view class="user-balance-right">
+            <text class="balance-o">800
+            </text>
+          <text class="balance-t">畅币总数</text>
+          </view>
+      </view>
+  </view>
+  <navigator class="" target="" url="/pages/order/history/history">
+    <view class="my-order">
+      <view class="my-order-left">
+        <image class="my-order-left-img" src="../../assets/images/my-order-icon.png" mode="scaleToFill" />
+          <text class="my-order-left-text">
+            我的订单
+          </text>
+        <text class="my-order-right-text">
+          查看全部订单
+        </text>
+        <image class="my-order-right-img" src="../../assets/images/pre-hist-icon.png" mode="scaleToFill" />
+     </view>
+    </view>
+  </navigator>
+    
+      <view class="more">
+          <view class="more-top">
+              <image class="more-top-img" src="../../assets/images/my-more-icon.png" mode="scaleToFill" />
+            <text class="more-top-text">
+            更多
+            </text>
+          </view>
+
+        <view class="more-bottom">
+          <navigator class="nav-item" target="" url="/pages/coin/coinDetai/coinDetai" >
+            <view class="more-item expiry">
+            <view>
+              <image class="more-bottom-img" src="../../assets/images/my-coin-icon.png" mode="scaleToFill" />
+            </view>
+              <text class="more-item-text">畅币兑奖</text>
+            </view>
+          </navigator>
+          
+            <navigator class="nav-item" url="/pages/coin/coinHistory/coinHistory">
+              <view class="more-item record">
+              <view>
+                <image class="more-bottom-img" src="../../assets/images/my-exchange-icon.png" mode="scaleToFill" />
+              </view>
+                <text class="more-item-text">兑奖记录</text>
+              </view>
+            </navigator>
+            
+            <navigator class="nav-item" target="" url="/pages/coin/pocketDetail/pocketDetail">
+              <view class="more-item detail">
+              <view>
+                <image class="more-bottom-img" src="../../assets/images/my-pocket-icon.png" mode="scaleToFill" />
+              </view>
+                <text class="more-item-text">红包明细</text>
+            </view>
+            </navigator>
+            
+            <navigator class="nav-item" target="" url="/pages/coin/team/team" >
+              <view class="more-item team">
+              <view>
+                <image class="more-bottom-img" src="../../assets/images/my-team-icon.png" mode="scaleToFill" />
+              </view>
+                <text class="more-item-text">我的小队</text>
+              </view>
+            </navigator>
+            </view>
+      </view>
+    <import src="../../components/footer/footer.wxml"/>
+  <template is="tabBar" data="{{tabBar:bindData.tabBar}}"/>
+    <view>
+  </view>
+</view>
+    

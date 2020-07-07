@@ -1,0 +1,61 @@
+<view class="evoucher">
+      <view class="search">
+      <view class="search-img-box">
+        <image class="search-img" src="../../../assets/images/ticket-search-icon.png" mode="widthFix" />
+      </view>
+        <view class="search-input-box">
+          <input class="search-input" auto-focus placeholder="搜索商品..."/>
+        </view>
+      </view>
+        <view class="detail">
+          <navigator class="" target="" url="/pages/menu/detail/evoucherDetail/evoucherDetail" hover-class="navigator-hover" open-type="navigate">
+            <view class="detail-name-box">
+              <text class="detail-name" selectable="true">
+                Grab Voucher
+              </text>
+            </view>
+              <view class="detail-btn-box">
+               <text class="detail-btn">
+                 立即购买
+               </text>
+              </view>
+           </navigator> 
+        </view>
+        
+                <view class="detail">
+          <navigator class="" target="" url="/pages/menu/detail/evoucherDetail/evoucherDetail" hover-class="navigator-hover" open-type="navigate">
+            <view class="detail-name-box">
+              <text class="detail-name" selectable="true">
+                PSN
+              </text>
+            </view>
+              <view class="detail-btn-box">
+               <text class="detail-btn">
+                 立即购买
+               </text>
+              </view>
+           </navigator> 
+        </view>
+
+                <view class="detail">
+          <navigator class="" target="" url="/pages/menu/detail/evoucherDetail/evoucherDetail" hover-class="navigator-hover" open-type="navigate">
+            <view class="detail-name-box">
+              <text class="detail-name" selectable="true">
+                PS PLUS
+              </text>
+            </view>
+              <view class="detail-btn-box">
+               <text class="detail-btn">
+                 立即购买
+               </text>
+              </view>
+           </navigator> 
+        </view>
+        <view class="accomplish-box">
+           <text class="accomplish">
+          已加载完
+        </text>
+        </view>
+</view>
+
+  

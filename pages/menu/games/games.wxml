@@ -1,0 +1,108 @@
+<!--pages/menu/games/games.wxml-->
+<view class="games">
+      <view class="search">
+      <view class="search-img-box">
+        <image class="search-img" src="../../../assets/images/ticket-search-icon.png" mode="widthFix" />
+      </view>
+        <view class="search-input-box">
+          <input class="search-input" auto-focus placeholder="搜索商品..."/>
+        </view>
+      </view>
+        <view class="detail">
+          <navigator class="" target="" url="/pages/menu/detail/gamesDetail/gamesDetail" hover-class="navigator-hover" open-type="navigate">
+            <view class="detail-name-box">
+              <text class="detail-name" selectable="true">
+                PlayPark @Cash 新加坡
+              </text>
+            </view>
+              <view class="detail-btn-box">
+               <text class="detail-btn">
+                 立即购买
+               </text>
+              </view>
+           </navigator> 
+        </view>
+        
+                <view class="detail">
+          <navigator class="" target="" url="/pages/menu/detail/gamesDetail/gamesDetail" hover-class="navigator-hover" open-type="navigate">
+            <view class="detail-name-box">
+              <text class="detail-name" selectable="true">
+                Cherry 平台
+              </text>
+            </view>
+              <view class="detail-btn-box">
+               <text class="detail-btn">
+                 立即购买
+               </text>
+              </view>
+           </navigator> 
+        </view>
+
+      <view class="detail">
+          <navigator class="" target="" url="/pages/menu/detail/gamesDetail/gamesDetail" hover-class="navigator-hover" open-type="navigate">
+            <view class="detail-name-box">
+              <text class="detail-name" selectable="true">
+                竟舞娱乐Garena平台
+              </text>
+            </view>
+            <view class="detail-btn-box">
+              <text class="detail-btn">
+                 立即购买
+               </text>
+            </view>
+          </navigator> 
+      </view>
+
+      <view class="detail">
+          <navigator class="" target="" url="/pages/menu/detail/gamesDetail/gamesDetail" hover-class="navigator-hover" open-type="navigate">
+            <view class="detail-name-box">
+              <text class="detail-name" selectable="true">
+                Steam卡
+              </text>
+            </view>
+            <view class="detail-btn-box">
+              <text class="detail-btn">
+                 立即购买
+               </text>
+            </view>
+          </navigator> 
+      </view>
+
+      <view class="detail">
+          <navigator class="" target="" url="/pages/menu/detail/gamesDetail/gamesDetail" hover-class="navigator-hover" open-type="navigate">
+            <view class="detail-name-box">
+              <text class="detail-name" selectable="true">
+                雷蛇Razer平台
+              </text>
+            </view>
+            <view class="detail-btn-box">
+              <text class="detail-btn">
+                 立即购买
+               </text>
+            </view>
+          </navigator> 
+      </view>
+
+      <view class="detail">
+          <navigator class="" target="" url="/pages/menu/detail/gamesDetail/gamesDetail" hover-class="navigator-hover" open-type="navigate">
+            <view class="detail-name-box">
+              <text class="detail-name" selectable="true">
+                MyCard 卡
+              </text>
+            </view>
+            <view class="detail-btn-box">
+              <text class="detail-btn">
+                 立即购买
+               </text>
+            </view>
+          </navigator> 
+      </view>
+        <view class="accomplish-box">
+           <text class="accomplish">
+               已加载完
+            </text>
+      </view>
+</view>
+
+  
+

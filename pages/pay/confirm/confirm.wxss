@@ -1,0 +1,225 @@
+/* pages/pay/confirm/confirm.wxss */
+page {
+  background-color: #f5f5f5;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.confirm-container {
+  background-color: #fff;
+}
+.confirm-left {
+  float: left;
+  width: 25%;
+  text-align: center;
+  border-right: 1px solid #d2d2d2;
+}
+.confirm-img-box {
+  width: 110rpx;
+  height: 110rpx;
+  margin: 0 auto;
+}
+.confirm-img,
+.modification-img,
+.prompt-img {
+  width: 100%;
+}
+.confirm-left-text {
+  line-height: 60rpx;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  font-size: 32rpx;
+}
+.confirm-right {
+  font-size: 32rpx;
+  margin-left: 30%;
+  line-height: 60rpx;
+}
+.number-box {
+  display: flex;
+  justify-content: space-between;
+}
+.number {
+  font-weight: 700;
+  width: 65%;
+  color: #333;
+}
+.modification {
+  padding-right: 20rpx;
+  width: 120rpx;
+  position: relative;
+  color: #848484;
+}
+.modification {
+  display: flex;
+  align-items: center;
+}
+.modification-img-box {
+  width: 40rpx;
+  height: 40rpx;
+}
+.modification-text {
+  margin-left: 10rpx;
+}
+.main-card {
+  display: block;
+  font-weight: 700;
+  color: #333;
+}
+.main-card-price {
+  color: #f64f49;
+}
+.discounts-box {
+  padding: 0 20rpx;
+}
+.discounts {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #333;
+  line-height: 80rpx;
+}
+.red-packet-box {
+  padding: 20rpx 20rpx;
+  background-color: #fff;
+}
+.red-packet {
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: 60rpx;
+  font-size: 30rpx;
+}
+.red-packet-price {
+  color: #f64f49;
+}
+.conter {
+  padding: 20rpx;
+  background-color: #fff;
+  font-size: 30rpx;
+}
+.conter-bottom {
+  margin: 20rpx 0;
+}
+.actual-price-box {
+  padding: 20rpx 20rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+.actual-price {
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: 60rpx;
+  font-size: 30rpx;
+}
+.prompt {
+  color: #f64f49;
+}
+.prompt-box {
+  display: flex;
+  margin: 20rpx 10rpx;
+}
+.prompt-img-box {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 8rpx;
+}
+.prompt-text-box {
+  margin-left: 50rpx;
+}
+.prompt-item {
+  display: block;
+  height: 60rpx;
+  font-size: 32rpx;
+}
+.male {
+  position: relative;
+  margin-top: 40rpx;
+  font-size: 30rpx;
+  align-items: center;
+}
+.male-hot {
+  position: absolute;
+  top: -10rpx;
+  left: 26rpx;
+}
+.read-box {
+  margin: 0 0 10rpx 54rpx;
+}
+.male .active::before {
+  background-color: #f95266;
+  background-clip: content-box;
+}
+radio .wx-radio-input.wx-radio-input-checked::before {
+  border-radius: 50%;
+  width: 12rpx;
+  height: 12rpx;
+  text-align: center;
+  font-size: 0rpx;
+  background-color: #333;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+radio {
+  border-radius: 50%;
+  width: 20rpx;
+  height: 20rpx;
+  border: 1px solid #333;
+  font-size: 0;
+}
+radio .wx-radio-input {
+  border-radius: 50%;
+  width: 20rpx;
+  height: 20rpx;
+  border: none;
+}
+.wechat-btn-box,
+.alipay-btn-box,
+.nets-btn-box {
+  display: flex;
+  margin: 20rpx auto;
+  width: 90%;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 32rpx;
+  line-height: 80rpx;
+  justify-content: center;
+  align-items: center;
+}
+.wechat-box,
+.alipay-box,
+.nets-box {
+  width: 50rpx;
+  height: 80rpx;
+}
+.wechat,
+.alipay,
+.nets {
+  width: 100%;
+  vertical-align: middle;
+}
+.wechat-btn,
+.alipay-btn,
+.nets-btn {
+  margin-left: 10rpx;
+}
+.wechat-btn-box {
+  background-color: #67c46b;
+}
+.alipay-btn-box {
+  background-color: #5a9bff;
+}
+.nets-btn-box {
+  background-color: #bc523c;
+}
+.footer-text {
+  text-align: center;
+    font-size: 30rpx;
+    color: #f64f49;
+}

@@ -1,0 +1,10 @@
+<!--pages/classify/classify.wxml-->
+
+<view class="classify">
+  <text>敬请期待</text>
+  <view>
+    <import src="../../components/footer/footer.wxml"/>
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}"/>
+  </view>
+</view>
+  

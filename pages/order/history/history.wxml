@@ -1,0 +1,36 @@
+<!--pages/order/history/history.wxml-->
+<view calss="history">
+      <view class="history-container">
+        <view class="list-content">
+            <view class="item-container" wx:for="{{orderList}}" wx:key="{{index}}">
+                <view class="item-box clearfloat">
+                    <view class="first-container">
+                        <view class="item-title">{{ item.title }}</view>
+                      <!--  <view  class="item-status">{{ item.state_str }}</view> -->
+                        <view  class="item-status refund">{{ item.state_str }}</view>   
+                      <!--  <view  class="item-status success">{{ item.state_str }}</view>  -->
+                      <!--  <view  class="item-status success">{{ item.state_str }}</view>  -->
+                    </view>
+                    <view class="sec-container">
+                        <view class="left">
+                            <view>{{ item.remark }}</view>
+                        </view>
+                        <view class="right">
+                            <text class="right-title">{{ item.pay }}</text>
+                            <text class="right-amount">￥{{ item.total_fee }}</text>
+                         <!--  <view class="right-amount">￥{{ item.total_fee }}</view>  -->
+                        </view>
+                    </view>
+                    <view class="thr-container">
+                        <view class="item-date">时间：{{ item.ctime }}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view>
+            {{text}}
+        </view>
+    </view>
+</view>
+
+

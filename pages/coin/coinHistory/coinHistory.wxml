@@ -1,0 +1,28 @@
+<!--pages/coin/coinHistory/coinHistory.wxml-->
+    <view class="coin-history-container">
+        <view class="history-box-profile">
+            <view class="item-history-profile clearfloat" wx:for="{{exchangeList}}" :key="{{index}}">
+                <view class="left-profile">
+                    <image class="left-profile-img" src="../../../assets/images/coin-coupon-icon.png" mode="widthFix" />
+                </view>
+                <view class="right-profile">
+                    <view class="right-left-box">
+                        <view class="p1">产品：{{ item.full_name }}</view>
+                        <view class="p1">备注：{{ item.remark }}</view>
+                        <view class="p1">时间：{{ item.ctime }}</view>
+                    </view>
+                    <view class="right-right-box">
+                        <text class="p-status">状态：{{ item.state }}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="list-bottom"
+        v-infinite-scroll="loadMore"
+        infinite-scroll-disabled="busy"
+        infinite-scroll-distance="10"
+        >
+            {{text}}
+        </view>
+    </view>
+

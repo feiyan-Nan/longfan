@@ -1,0 +1,103 @@
+<!--pages/menu/phonecard/phonecard.wxml-->
+<view class="phonecard">
+  <view class="swiper">
+    <swiper 
+    indicator-dots="{{indicatorDots}}" 
+    autoplay="{{autoplay}}" 
+    interval="{{interval}}" 
+    duration="{{duration}}"
+    indicator-color="rgba(208, 205, 209, .7)"
+    indicator-active-color="#4fa526"
+    >
+    <swiper-item><image class="swiper-img" src="../../../assets/images/ticket1.png" mode="scaleToFill"/></swiper-item>
+    <swiper-item><image class="swiper-img"  src="../../../assets/images/post-head-bg.png" mode="scaleToFill"/></swiper-item>
+    <swiper-item><image class="swiper-img"  src="../../../assets/images/ticket.jpg" mode="scaleToFill"/></swiper-item>
+    </swiper>
+  </view>
+  <view class="phonecard-type clearfix">
+        <view class="phonecard-text-box">
+            <text class="phonecard-headline">选择电话卡类型</text>
+        </view>
+        <view class="phonecard-container">
+          <view class='phonecard-item' >
+            <view class="phonecard-img-box ">
+              <image class='phonecard-img {{num==1?"active":""}}' src="../../../assets/images/s15.png" mode="widthFix" data-num='1' catchtap='changeOil' />
+            </view>
+            <text class="phonecard-text">$15 hi! 电话卡</text>           
+          </view>
+
+          <view class='phonecard-item'>
+            <view class="phonecard-img-box">
+              <image class='phonecard-img {{num==2?"active":""}}' src="../../../assets/images/s18.png" mode="widthFix" data-num='2' catchtap='changeOil' />
+            </view>
+            <text class="phonecard-text">$18 hi!Tourist 游客卡</text>           
+          </view>
+          
+          <view class='phonecard-item'>
+            <view class="phonecard-img-box" >
+              <image class='phonecard-img {{num==3?"active":""}}' src="../../../assets/images/gomo.png" mode="widthFix" data-num='3' catchtap='changeOil' />
+            </view>
+            <text class="phonecard-text">GOMO Travel 电话卡</text>           
+          </view>
+        </view>
+  </view>
+          <view class="particulars clearfix">
+              <view class="particulars-btn" bindtap="click" >
+                查 看 套 餐 详 情
+              </view>
+          </view>
+
+      <view class="confirm-box" hidden="{{hiddenConfirm}}">
+        <view class="confirm">
+          <view class="header">
+            <view class="header-left">
+              <h2 class="header-left-text"></h2>
+              <span class="header-left-img-box">
+              <image class="header-left-img" src="../../../assets/images/close-icon.png" bindtap="click" />
+            </span>
+          </view>
+        </view>
+        <view class="descrpiton-content"></view>
+      </view>
+    </view>
+
+    <view class="subscriber">
+      <input type="text" placeholder="姓名" name="name" placeholder-class="placeholder" />
+      <input type="text" placeholder="联系号码" name="mobile" placeholder-class="placeholder" />
+      <input type="text" placeholder="Email" name="email" placeholder-class="placeholder" />
+      <textarea
+        class="textcolor"
+        rows="3"
+        cols="20"
+        placeholder="发货地址 (仅限新加坡)"
+        style="resize: none"
+        placeholder-class="placeholder"
+      ></textarea>
+      <input type="text" placeholder="邮编" name="setSession" placeholder-class="placeholder" />
+    </view>
+
+    <view class="male">
+        <view class="male-hot">
+          <label catchtap='checkedTap'>
+            <radio color="#fff" checked="{{checked}}">  
+            </radio>
+          </label>
+        </view>
+        <view class="read-box">
+          <text>我已阅读并同意</text>
+          <text class="read">相关条款</text>
+        </view>
+    </view>
+
+    <view class="purchase-btn">
+      <view class="purchase">立即购买</view>
+    </view>
+
+    <view class="attention">
+        <p class="attention-text">长按关注畅通狮城公众号</p>
+        <view class="two-dimensional-code">
+          <image class="two-dimensional-img" src="../../../assets/images/office-thumb.jpg" />
+        </view>
+    </view>
+</view>
+  

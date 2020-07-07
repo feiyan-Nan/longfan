@@ -1,0 +1,96 @@
+<view class="home">
+  <view class="swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="rgba(4, 190, 2 , .7)" indicator-active-color="#fff">
+      <swiper-item>
+        <image class="swiper-img" src="../../assets/images/s15.png" mode="scaleToFill" />
+      </swiper-item>
+      <swiper-item>
+        <image class="swiper-img" src="../../assets/images/s18.png" mode="scaleToFill" />
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="nav clearfix">
+    <navigator class="" target="" url="../menu/prepaid/prepaid" hover-class="none" open-type="navigate">
+      <view class="nav-item">
+        <image class="item-img" src="../../assets/images/pre-icon.png" mode="widthFix" />
+        <text class="item-text">预付卡充值</text>
+      </view>
+    </navigator>
+    <navigator class="" target="" url="../menu/postpaid/postpaid" hover-class="none" open-type="navigate">
+      <view class="nav-item">
+        <image class="item-img" src="../../assets/images/post-icon.png" mode="widthFix" />
+        <text class="item-text">合约卡续费</text>
+      </view>
+    </navigator>
+    <navigator class="" target="" url="../menu/ticket/ticket" hover-class="none" open-type="navigate">
+      <view class="nav-item">
+        <image class="item-img" src="../../assets/images/tic-icon.png" mode="widthFix" />
+        <text class="item-text">门票购买</text>
+      </view>
+    </navigator>
+    <navigator class="" target="" url="../menu/games/games" hover-class="none" open-type="navigate">
+      <view class="nav-item">
+        <image class="item-img" src="../../assets/images/game-icon.png" mode="widthFix" />
+        <text class="item-text">游戏币充值</text>
+      </view>
+    </navigator>
+    <navigator class="" target="" url="../menu/evoucher/evoucher" hover-class="none" open-type="navigate">
+      <view class="nav-item">
+        <image class="item-img" src="../../assets/images/ev-icon.png" mode="widthFix" />
+        <text class="item-text">E卷</text>
+      </view>
+    </navigator>
+    <navigator class="" target="" url="../menu/callcard/callcard" hover-class="none" open-type="navigate">
+      <view class="nav-item">
+        <image class="item-img" src="../../assets/images/call-icon.png" mode="widthFix" />
+        <text class="item-text">回拨卡</text>
+      </view>
+    </navigator>
+    <navigator class="" target="" url="../menu/service/service" hover-class="none" open-type="navigate">
+      <view class="nav-item">
+        <image class="item-img" src="../../assets/images/service-icon-2.png" mode="widthFix" />
+        <text class="item-text">账号服务</text>
+      </view>
+    </navigator>
+    <navigator class="" target="" url="../menu/phonecard/phonecard" hover-class="none" open-type="navigate">
+      <view class="nav-item">
+        <image class="item-img" src="../../assets/images/call-icon.png" mode="widthFix" />
+        <text class="item-text">电话卡</text>
+      </view>
+    </navigator>
+  </view>
+  <view class="article-container clearfix">
+    <view class="article-box-1 clearfix">
+      <view class="article-left">
+        <image class="article-img" src="../../assets/images/ticket.jpg" mode="aspectFill" />
+      </view>
+      <view class="article-right">
+        <view class="text-container">
+          <text class="headline item-text" selectable="false">
+            [嘿哈]2019更全 新电信#星河#m1预付卡使用TIPS，值得收藏分享
+          </text>
+          <text class="more item-text" selectable="false">更多预付卡疑问 请关注畅通狮城</text>
+          <text class="source item-text" selectable="false">来源：畅通狮城</text>
+        </view>
+      </view>
+    </view>
+    <view class="article-box-2 clearfix">
+      <view class="article-left">
+        <image class="article-img" src="../../assets/images/ticket.jpg" mode="aspectFill" />
+      </view>
+      <view class="article-right">
+        <view class="text-container">
+          <text class="headline item-text" selectable="false">小知识| 购买新加坡手机卡</text>
+          <text class="more item-text" selectable="false">
+            新学期来了,小可爱们还在迷茫怎么买手机卡嘛？小畅这期小知识就是如何购买新加坡电话卡，赶紧戳我吧！
+          </text>
+          <text class="source item-text" selectable="false">来源：畅通狮城</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view>
+    <import src="../../components/footer/footer.wxml" />
+    <template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+  </view>
+</view>

@@ -1,0 +1,110 @@
+<!--pages/menu/detail/ticketDetail/ticketDetail.wxml-->
+<view class="ticketDetail">
+    <view class="logo">
+      <image class="logo-img" src="../../../../assets/images/swiper1.jpg" mode="widthFix" />
+    </view>
+    
+    <view class="header">
+        <view class="header-box">
+          <view class="header-img-box">
+            <image class="icon-img" src="../../../../assets/images/desc-icon.png" mode="widthFix" />
+          </view>
+          <view class="header-brief">
+            Cathay 电影券
+          </view>
+        </view>
+      
+      <view class="header-tetx">
+        <text class="header-item-front">￥54.40</text>
+        <text class="header-item-queen">起</text>
+      </view>
+    </view>
+
+    <view class="conter-container">
+
+      <view class="conter-top">
+        <view class="conter-left">
+          <text class="conter-item-front">周末可用</text>
+          <text class="conter-item-queen">￥54.40</text>
+        </view>
+        <view class="conter-right">
+          <view class="reduct-box {{minusStatus}}" bindtap="reductFunc">
+            <image class="reduct" src="../../../../assets/images/reduct-icon.png" mode="widthFix" />
+          </view>
+            <text class="number" bindchange="bindManual">{{num}}</text>
+          <view class="add-box" bindtap="addFunc">
+            <image class="add" src="../../../../assets/images/add-icon.png" mode="widthFix" />
+          </view>  
+        </view> 
+      </view>
+
+      <view class="conter-bottom">
+        <view class="conter-left">
+          <text class="conter-item-front">周一至五</text>
+          <text class="conter-item-queen">￥43.60</text>
+        </view>
+        <view class="conter-right">
+          <view class="reduct-box {{minusStatus}}" bindtap="reductFunc">
+            <image class="reduct" src="../../../../assets/images/reduct-icon.png" mode="widthFix" bindload="reductFunc" />
+          </view>
+            <text class="number">{{num}}</text>
+          <view class="add-box" bindtap="addFunc">
+            <image class="add" src="../../../../assets/images/add-icon.png" mode="widthFix" />
+          </view>  
+        </view> 
+      </view>
+
+    </view>
+      
+      
+
+    <view class="footer-container">
+      <view class="footer">
+        <view class="footer-img-box">
+          <image class="footer-img" src="../../../../assets/images/desc-icon.png" mode="widthFix" />
+        </view>
+        <text class="footer-text">使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+          使用方式：有效期至2019年5月31日，随时可以前往消费，换票后当天可消费，先到先得。
+        </text>
+      </view>
+    </view>
+    
+    <navigator class="" target="" url="../../../pay/confirm/confirm">
+      <view class="footer-btn-box">
+        <view class="footer-btn">立即购买</view>
+      </view>
+    </navigator>
+      
+</view>
+  

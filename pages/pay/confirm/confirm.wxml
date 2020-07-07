@@ -1,0 +1,104 @@
+<!--pages/pay/confirm/confirm.wxml-->
+<view class="confirm">
+    <view class="confirm-container clearfix">
+      <view class="confirm-left">
+        <view class="confirm-img-box">
+          <image class="confirm-img" src="../../../assets/images/confirm-pre-icon.png" mode="widthFix"/>
+        </view>
+        <text class="confirm-left-text">充值信息</text>
+      </view>
+      <view class="confirm-right">
+        <view class="number-box">
+          <view class="number">
+            81234567
+          </view>
+        <view class="modification">
+          <view class="modification-img-box">
+              <image class="modification-img" src="../../../assets/images/edit-icon.png" mode="widthFix" />
+          </view>
+          <text class="modification-text">修改</text>
+          </view>
+        </view>
+        <text class="main-card">新电信 主卡$50</text>
+        <text class="main-card-price">￥251.6</text>
+      </view>
+    </view>
+  
+  <view class="profile-promo-container">
+      <view class="discounts-box">
+        <text class="discounts">优惠</text>
+      </view>
+
+    <view class="red-packet-box">
+      <view class="red-packet" wx:for="{{redPacket}}" wx:key="this">
+        <view class="red-packet-name">{{item.name}}</view>
+        <view class="red-packet-price">{{item.price}}</view>
+      </view>
+    </view>
+      
+    <view class="conter">
+      <view class="conter-top">-【畅通合伙人】原价已减￥10.70</view>
+      <view class="conter-bottom">欢迎回家，畅通合伙人</view>
+    </view>
+    
+    <view class="actual-price-box">
+      <view class="actual-price" wx:for="{{actualPrice}}" wx:key="this">
+        <view class="actual-price-name">{{item.name}}</view>
+        <view class="actual-price-price">{{item.price}}</view>  
+      </view>
+    </view>
+      
+    <view class="prompt">
+      <view class="prompt-box">
+        <view class="prompt-img-box">
+          <image class="prompt-img" src="../../../assets/images/confirm-warn-icon.png" mode="widthFix" />
+        </view>
+        <view class="prompt-text">温馨提醒：</view>
+      </view>
+
+      <view class="prompt-text-box" style="flex-direction:column;">
+        <text class="prompt-item">输入错误号码造成的损失将无法退款</text  >
+        <text class="prompt-item">充值主卡请注意数据自动扣费的情形</text>
+        <text class="prompt-item">应付金额低于80元 无法使用NETS支付</text>
+      </view>
+    </view>
+    
+    <view class="male">
+        <view class="male-hot">
+          <label catchtap='checkedTap'>
+            <radio color="#fff" checked="{{checked}}">  
+            </radio>
+          </label>
+        </view>
+        <view class="read-box">
+          <text class="consent">同意充值号码接受来自ChangTong SG的短信</text>
+        </view>
+    </view>      
+  </view>
+
+  <navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+      <view class="wechat-btn-box">
+          <view class="wechat-box"><image class="wechat" src="../../../assets/images/wx-icon.png" mode="widthFix" /></view>
+          <view class="wechat-btn item-btn">微信支付</view>
+      </view>
+  </navigator>
+    
+  <navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+      <view class="alipay-btn-box">
+          <view class="alipay-box"><image class="alipay" src="../../../assets/images/ali-icon.png" mode="widthFix" /></view>
+          <view class="alipay-btn item-btn">支付宝支付</view>
+      </view>
+  </navigator>    
+    
+  <navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+      <view class="nets-btn-box">
+          <view class="nets-box"><image class="nets" src="../../../assets/images/nets-icon.png" mode="widthFix" /></view>
+          <view class="nets-btn item-btn">nets支付</view>
+      </view>
+  </navigator>
+
+    <view class="footer-text">
+      *选用NETS支付请允许浏览器弹框
+    </view>
+      
+</view>

@@ -1,0 +1,46 @@
+<!--pages/menu/ticket/ticket.wxml-->
+<view class="ticket">
+        <view class="search">
+        <view class="search-img-box">
+          <image class="search-img" src="../../../assets/images/ticket-search-icon.png" mode="widthFix" />
+        </view>
+        <view class="search-input-box">
+          <input class="search-input" auto-focus placeholder="搜索商品..."/>
+      </view>
+      </view>
+
+<view class="tab">
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+        <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">全部</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">环球影城</view>
+        <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">动物园</view>
+        <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">圣淘沙</view>
+        <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">新山</view>
+        <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">新加坡亲子游</view>
+        <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">电影票/餐饮劵</view>
+    </scroll-view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+     style="height:{{winHeight}}rpx">
+        <swiper-item wx:for="{{[0,1,2,3,4,5,6]}}" wx:key="index">
+            <scroll-view scroll-y="true" class="scoll-h" >
+                <block wx:for="{{[1,2,3,4,5,6]}}" wx:key="*this">
+                <navigator url="/pages/menu/detail/ticketDetail/ticketDetail" class="askBtn">
+                    <view class="item-ans">
+                        <view class="avatar">
+                            <image class="avatar-img" src="https://shop.chongzhi.sg/static/shop/images/ticket/science_center_adult.jpg"></image>
+                        </view>
+                        <view class="expertInfo">
+                            <view class="expertInfo-name">新加坡科学馆+万象馆+”贴近蝴蝶“ 三合一</view>
+                            <text class="expertInfo-btn">
+                            立即购买
+                          </text>
+                        </view> 
+                    </view>
+                    </navigator> 
+                </block>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>
+</view>
+  

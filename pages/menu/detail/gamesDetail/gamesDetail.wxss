@@ -1,0 +1,126 @@
+/* pages/menu/detail/gamesDetail/gamesDetail.wxss */
+page {
+  background-color: #f5f5f5;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.headline {
+  background-color: #fff;
+  height: 80rpx;
+  padding: 20rpx;
+  border-top: 2px solid #f5f5f5;
+}
+.headline-box {
+  font-size: 34rpx;
+  color: #000;
+  font-weight: 700;
+  line-height: 80rpx;
+}
+.select,
+.way {
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #535e7c;
+  font-weight: 700;
+  font-size: 32rpx;
+  padding: 20rpx;
+}
+.product {  
+  padding: 40rpx 20rpx 0;
+  background: #fff;
+}
+.prodct-box {
+height: 120rpx;
+}
+.prodct-box-left {
+  position: relative;
+  line-height: 110rpx;
+  float: left;
+  width: 29%;
+  border: 1px solid #d5d8e1;
+  border-radius: 8px;
+  margin: 0 1.8%;
+  margin-bottom: 40rpx;
+  text-align: center;
+}
+.prodct-box-right {
+  position: relative;
+  line-height: 110rpx;
+  float: left;
+  width: 29%;
+  border: 1px solid #d5d8e1;
+  border-radius: 8px;
+  margin: 0 1.8%;
+  margin-bottom: 40rpx;
+  text-align: center;
+}
+.active {
+  color: #ff5266;
+  border: 1px solid #ff5266;
+}
+.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40rpx;
+  height: 40rpx;
+  background-image: url(https://shop.chongzhi.sg/static/miniprogram/choice-in.png);
+  background-size: 100%;
+}
+.block {
+  padding: 40rpx 30rpx;
+  background: #fff;
+  height: 80rpx;
+}
+.block-box {
+  line-height: 80rpx;
+  float: left;
+  width: 24%;
+  border: 1px solid #d5d8e1;
+  border-radius: 8px;
+  text-align: center;
+}
+.block-box-sole {
+  position: relative;
+  border-radius: 8px;
+}
+.selling {
+  margin-top: 20rpx;
+  padding: 20rpx 40rpx;
+  background: #fff;
+}
+.selling-box {
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #f5f5f5;
+}
+.selling-box-left {
+  float: left;
+  color: #999fad;
+}
+.selling-box-right {
+  float: left;
+  color: #e94141;
+}
+.footer-btn-box {
+  position: fixed;
+    bottom: 60rpx;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+  text-align: center;
+}
+.footer-btn {
+  font-size: 32rpx;
+  line-height: 80rpx;
+  background: #ff5266;
+  color: #fff;
+  border-radius: 5px;
+}

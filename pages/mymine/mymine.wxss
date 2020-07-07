@@ -1,0 +1,148 @@
+/* pages/mymine/mymine.wxss */
+page {
+  background-color: #f5f5f5;
+} 
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.mymine {
+  background-color: #f5f5f5;
+}
+.mine-top  {
+  position: absolute;
+  top: 0%;
+  right: 75%;
+  width: 100%;
+}
+.mine-top-img {
+  display: block;
+  width: 250%;
+  height: 218px;
+}
+.mine-user {
+  position: absolute;
+  top: 8%;
+  left: 11%;
+}
+.mine-user-left-img {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+}
+.username {
+  position: absolute;
+  top:  -4%;
+  left: 120%;
+  font-size: 20px;
+  color: #fff;
+}
+.user-balance {
+  position: absolute;
+  top: 170px;
+  right: 24rpx;
+  width: 704rpx;
+  height: 242rpx;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.user-balance-left {
+  float: left;
+  width: 50%;
+  margin-top: 32px;
+  text-align: center;
+  border-right: 1px solid #e5e6e8;
+}
+.user-balance-right {
+  float: right;
+  width: 49%;
+  margin-top: 32px;
+  text-align: center;
+}
+.balance-o {
+  line-height: 36px;
+  color: #e75b5a;
+  font-weight: 700;
+  font-size: 20px;
+}
+.balance-t {
+  color: #a3aac4;
+  font-size: 16px;
+}
+.my-order {
+  position: absolute;
+  top: 305px;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background-color: #ffffff;
+}
+.my-order-left-img {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 17px 8px 0 10px;
+}
+.my-order-left-text {
+  float: left;
+  font-size: 16px;
+  font-weight: 700;
+  color: #506082;
+}
+.my-order-right-text {
+  float: right;
+  font-size: 16px;
+  color: #8c909b;
+  margin-right: 28px;
+}
+.my-order-right-img {
+  position: absolute;
+  top: 22px;
+  right: 6px;
+  width: 10px;
+  height: 20px;
+}
+.more {
+    position: absolute;
+  bottom: 36px;
+  left: 0;
+  width: 100%;
+  height: 187px;
+  background-color: #fff;
+}
+.more-top {
+  width: 100%;
+  height: 65px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.more-top-img {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 17px 8px 0 10px;
+}
+.more-top-text {
+  font-size: 16px;
+  color: #506082;
+  font-weight: 700;
+}
+.nav-item {
+  width: 25%;
+}
+.more-bottom {
+  display: flex;
+}
+.more-item {
+  text-align: center;
+}
+.more-bottom-img {
+  width: 60px;
+  height: 60px;
+  }
+.more-item-text {
+  font-size: 16px;
+  color: #9ba7bf;
+}

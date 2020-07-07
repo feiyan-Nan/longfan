@@ -1,0 +1,59 @@
+<!--pages/menu/detail/evoucherDetail/evoucherDetail.wxml-->
+<view class="gamesDetail">
+    <view class="headline">
+      <view class="headline-box">
+        Grab Voucher
+      </view>
+    </view>
+
+    <view class="select">
+      <view class="select-box">
+        请选择产品
+      </view>
+    </view>
+
+    <view class="product clearfix">
+      <view class="prodct-box">
+        <view class="prodct-box-left {{actTab == 0 ? 'active' : ''}}" data-actTab= '0' bindtap="pitchList" value="10">
+            $5     
+        </view>
+        <view class="prodct-box-right {{actTab == 1 ? 'active' : ''}}" data-actTab= '1' bindtap="pitchList">
+            $8      
+        </view>
+        <view class="prodct-box-right {{actTab == 2 ? 'active' : ''}}" data-actTab= '2' bindtap="pitchList">
+            $10      
+        </view>
+        <view class="prodct-box-right {{actTab == 3 ? 'active' : ''}}" data-actTab= '3' bindtap="pitchList">
+            $15     
+        </view>       
+      </view>
+    </view>
+
+    <view class="way">
+        <view class="way-box">
+        充值方式
+      </view>
+    </view>
+
+    <view class="block">
+      <view class="block-box">  
+        <view class="block-box-sole {{actTabs == 5 ? 'active' : ''}}" data-actTabs= '5' bindtab="pitchList">
+            卡密      
+        </view>       
+      </view>
+    </view>
+
+    <view class="selling">
+      <view class="selling-box">
+          <view class="selling-box-left">售价：{{}}</view>
+          <view class="selling-box-right">￥23.50{{}}</view>
+      </view>
+    </view>
+      <navigator class="" target="" url="../../../pay/confirm/confirm">
+        <view class="footer-btn-box">
+        <view class="footer-btn">立即购买</view>
+      </view>
+      </navigator>
+      
+</view>
+  

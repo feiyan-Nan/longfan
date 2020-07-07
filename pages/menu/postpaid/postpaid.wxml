@@ -1,0 +1,84 @@
+<!--pages/menu/postpaid/postpaid.wxml-->
+<view class="postpaid">
+      <view class="header">
+      <image class="header-img" src="../../../assets/images/post-head-bg.png" mode="widthFix" />        
+      </view>
+      <view class="info">
+      <view class="operator item-int">
+        <view class="operator-name">
+          运营商
+        </view>
+        <view class='select_box'>
+          <view class='select' catchtap='selectTap'>
+        <text class='select_text'>{{selectData[index]}}</text>
+        <image class='select_img {{show&&"select_img_rotate"}}' src='../../../assets/images/arrows-bottom.png'></image>
+        </view>
+        <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+        </view>
+      </view>
+            
+          <view class="account item-int clearfix">
+            <text class="account-name" selectable="false">账号</text>
+              <view class="account-img-box">
+              <image class="account-img" src="../../../assets/images/question-icon.png" mode="widthFix"/>                
+              </view>
+                <view class="account-text-box">
+                <input class="account-text" placeholder="请填写账号">
+                </input>
+                </view>
+          </view>
+
+          <view class="money item-int">
+            <view class="money-warning-box-top clearfix">
+              <view class="money-warning-img-box">
+                <image class="money-warning-img" src="../../../assets/images/warn-icon.png" mode="widthFix" />
+              </view>
+                <text class="money-warning" selectable="false">注意,这是您的手机计划账号,不是手机号</text>
+            </view>
+            <view class="money-warning-box-bottom">
+              <text class="money-name" selectable="false">金额&nbsp;($)</text>
+                <view class="money-text-box">
+                  <input class="money-text"type="number" placeholder="请输入要缴费的金额">
+                  </input>
+                </view>
+            </view>
+          </view>  
+
+          <view class="mobile item-int">
+            <view class="mobile-warning-box-top clearfix">
+              <view class="mobile-warning-img-box">
+                <image class="mobile-warning-img" src="../../../assets/images/warn-icon.png" mode="widthFix" />
+              </view>
+                <text class="mobile-warning" selectable="false">请填写账单实际金额,精确到分</text>
+            </view>
+            <view class="mobile-warning-box-bottom">
+              <text class="mobile-name" selectable="false">联系手机</text>
+                <view class="mobile-text-box">
+                  <input class="mobile-text"type="number" placeholder="请输入联系号码">
+                  </input>
+                </view>
+            </view>
+          </view>
+
+          <view class="remark item-int">
+            <view class="remark-name">
+              <text class="remark-name-front">备注(选填)</text>
+                <text class="remark-name-queen">可填备注</text>
+            </view>
+            <view class="remark-inport-box">
+                <textarea class="remark-inport">
+                </textarea>
+            </view>
+          </view> 
+          
+          <navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+            <view class="order">
+            <view class="order-btn">立即下单</view>
+          </view>
+          </navigator>
+            
+      </view>
+      </view>
+</view>
+  

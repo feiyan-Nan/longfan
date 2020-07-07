@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/coin/coinDetai/coinDetai",
+    "pages/coin/pocketDetail/pocketDetail",
+    "pages/coin/team/team",
+    "pages/coin/coinHistory/coinHistory",
+    "pages/order/history/history",
+    "pages/mymine/mymine",
+    "pages/pay/confirm/confirm",
+    "pages/menu/detail/callCardDetail/callCardDetail",
+    "pages/menu/detail/evoucherDetail/evoucherDetail",
+    "pages/menu/detail/gamesDetail/gamesDetail",  
+    "pages/menu/detail/ticketDetail/ticketDetail",  
+    "pages/menu/detail/serviceDetail/serviceDetail",
+    "pages/menu/prepaid/prepaid",
+    "pages/menu/phonecard/phonecard",
+    "pages/menu/postpaid/postpaid",
+    "pages/menu/ticket/ticket",
+    "pages/menu/evoucher/evoucher",
+    "pages/menu/games/games",
+    "pages/menu/callcard/callcard",
+    "pages/menu/service/service",
+    "pages/classify/classify",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

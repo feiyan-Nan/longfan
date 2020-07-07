@@ -1,0 +1,150 @@
+<!--pages/coin/coinDetai/coinDetai.wxml-->
+<view class="coindetai">
+  
+  <view class="coindetai-header">
+    <view class="header-bgc">
+        <view class="header-box">
+          <navigator class="header-img-left" url="/pages/coin/coinHistory/coinHistory">
+              <image class="left-img" src="../../../assets/images/coin-ex-icon.png" mode="widthFix" />
+          </navigator>
+          <view class="header-img-right" bindtap="clickBtn">
+            <image class="right-img" src="../../../assets/images/coin-qa-icon.png" mode="widthFix" />
+          </view>
+        </view>
+
+        <view class="currency">
+          <view class="currency-img-box">
+            <image class="currency-img" src="../../../assets/images/coin-s-icon.png" mode="widthFix" />
+          </view>
+          <text class="currency-number">800</text>
+          <text class="currency-quantity">个</text>
+        </view>
+
+        <view class="cla">
+          <view class="expect">
+            <text class="">畅币有效期：</text>
+            <text class="">2019-12-31</text>
+          </view>
+          <view class="grade">
+            <text class="">已解锁等级：</text>
+            <text class="">2/4</text>
+          </view>
+        </view>  
+    </view>
+      
+  </view>
+
+  <view class="conversion">
+    您可兑换的奖励
+  </view>
+  
+  <view class="product">
+    <view class="prodct-box">
+      <view class="prodct-box-left {{actTab == 0 ? 'active' : ''}}" data-actTab= '0' bindtap="pitchList" value="10">
+          <view class="prodct-img-box">
+            <image class="prodct-img" src="../../../assets/images/coin-lock.png" mode="widthFix" />
+          </view>
+          等级1
+      </view>
+      <view class="prodct-box-left {{actTab == 1 ? 'active' : ''}}" data-actTab= '1' bindtap="pitchList">
+          <view class="prodct-img-box">
+            <image class="prodct-img" src="../../../assets/images/coin-lock.png" mode="widthFix" />
+          </view>
+          等级2      
+      </view>
+      <view class="prodct-box-left {{actTab == 2 ? 'active' : ''}}" data-actTab= '2' bindtap="pitchList">
+          <view class="prodct-img-box">
+            <image class="prodct-img" src="../../../assets/images/coin-lock.png" mode="widthFix" />
+          </view>
+          等级3      
+      </view>
+      <view class="prodct-box-left {{actTab == 3 ? 'active' : ''}}" data-actTab= '3' bindtap="pitchList">
+          <view class="prodct-img-box">
+            <image class="prodct-img" src="../../../assets/images/coin-lock.png" mode="widthFix" />
+          </view>
+          等级4     
+      </view>       
+    </view>
+  </view>
+
+  <view class="need">
+      <view class="need-box">
+        <text class="need-left">需要获得200畅币</text>
+        <text class="need-right">800/200</text>
+      </view>
+      <view class="need-img-box">
+        <image class="need-img" src="../../../assets/images/progress-bar.png" mode="widthFix" />
+      </view>
+  </view>
+    
+  <view class="history-box-profile clearfix">
+      <view class="item-history-profile" wx:for="{{exchangeList}}" wx:key="{{index}}">
+          <view class="left-profile">
+              <image class="left-profile-img" src="../../../assets/images/coin-coupon-icon.png" mode="widthFix" />
+          </view>
+          <view class="right-profile">
+              <view class="right-left-box">
+                  <view class="p1">{{ item.full_name }}</view>
+              </view>
+              <view class="right-right-box">
+                <view class="right-right-box-img">
+                  <image class="right-right-img" src="../../../assets/images/coin-s-icon.png" mode="widthFix" />
+                </view>
+                <text class="p-status">{{ item.state }}</text>
+              </view>
+          </view>
+          <view class="exchange-box">
+            <text class="exchange-btn" bindtap="clickConversion">兑换</text>
+          </view>
+      </view>
+  </view>
+
+  <view class="coin-desc coin-desc-show clearfix" hidden="{{hiddenCoin}}">
+    <view class="close-btn" bindtap="clickBtn">
+      <image class="close-btn-img" src="../../../assets/images/close.png" mode="widthFix" />
+    </view>
+    <view class="coin-desc-content">
+        <view class="content-title">什么是畅币?</view>
+        <view>畅币是畅通狮城公众号的用户奖励，无需领取，只要在畅通狮城平台上消费，就会自动获得对应的畅币，畅币累计到一定数量，可以兑换奖励。</view>
+        <view class="content-title">畅币可以兑换什么？</view>
+        <view>①兑换现金红包，兑换成功后会从公众号发送</view>
+        <view>②兑换代金券，兑换成功后在畅通狮城平台消费时会自动抵扣</view>
+        <view>③兑换话费，兑换成功后话费会进入您指定的号码</view>
+        <view class="content-title">畅币有效期？</view>
+        <view>所获畅币自然年内有效，每年12月31号清零（只要在当年年底之前使用都有效）。</view>
+        <view class="content-title">取关了小畅畅币会清零吗？</view>
+        <view>①取关了小畅不会清零</view>
+        <view>②畅币到了年底将清零重置</view>
+        <view class="content-title">可否有其他的途径获得畅币？</view>
+        <view>小畅正在努力设计ing...</view>
+    </view>
+</view>
+
+          <view class="isShow ? 'exchange-coin clearfix exchange-coin-show' : 'exchange-coin'" hidden="{{conversionCoin}}">
+            <view class="exchange-coin-close" bindtap="clickConversion">
+              <image class="exchange-img" src="../../../assets/images/close.png" mode="widthFix" />
+            </view>
+            <view class="exchange-info">
+                <view class="exchange-goods-item">
+                    <view class="goods-item-title">兑换奖品：</view>
+                    <view class="goods-pid">{{ choseGoods.full_name }}</view>
+                </view>
+                <view class="exchange-goods-item coupon-desc" v-if="isCoupon">
+                    <p class="goods-pid2" style="font-size: 15px;color: red;">*兑换成功后在畅通狮城平台消费时会自动抵扣</p>
+                </view>
+                <view class="exchange-goods-item pocket-desc" v-if="isCash">
+                    <p class="goods-pid2" style="font-size: 15px;color: red;">*兑换成功后在公众号领取</p>
+                </view>
+             <!--   <view class="user-phone-info clearfloat" v-if="isTopup">
+                    <view class="phone-prefix">+65</view> -->
+                  <!--  <view class="input-div">
+                        <input type="text" placeholder="手机号码" class="phone-input"> 
+                    </view>
+                </view>-->
+                <view class="exchange-btn-div">
+                    <view class="exchange-btn">立即兑换</view>
+                </view>
+            </view>
+        </view>
+
+</view>

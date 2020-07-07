@@ -1,0 +1,55 @@
+<!--pages/menu/prepaid/prepaid.wxml-->
+<view class="prepaid">
+<view class="tab">
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+        <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">新加坡</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">马来西亚</view>
+        <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">印尼</view>
+        <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">泰国</view>
+        <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">印度</view>
+        <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">菲力宾</view>
+        <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">缅甸</view>
+    </scroll-view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+     style="height:{{winHeight}}rpx">
+        <swiper-item wx:for="{{[0,1,2,3,4,5,6]}}" wx:key="index">
+            <scroll-view scroll-y="true" class="scoll-h" >
+                <block wx:for="{{[1,2,3]}}" wx:key="*this">
+                    <view class="item-ans">
+                        <view class="avatar">
+                            <image class="avatar-img" src="../../../assets/images/coin-st-icon.png"></image>
+                        </view>
+                        <view class="expertInfo">
+                            <navigator class="expertInfo-name" url="/pages/menu/detail/prepaidDetail/prepaidDetail">在线直充</navigator>
+                        </view>
+                        <navigator url="/pages/askExpert/expertDetail" class="askBtn">卡密</navigator> 
+                    </view>
+                </block>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>
+    <navigator class="" url="/pages/menu/detail/prepaidDetail/prepaidDetail" hover-class="navigator-hover" open-type="navigate">
+        <view class="history">
+            <text class="history-text">
+                历史号码
+            </text>
+            <view class="number-box">
+                <view class="number">
+                
+                    <view class="number-img-box">
+                        <image class="number-img" src="../../../assets/images/coin-st-icon.png" mode="scaleToFill"/>
+                    </view>
+                    <view class="number-text-box">
+                        <text class="number-text" selectable="true">3216322</text>
+                    </view>
+                    <view class="number-arrows-box">
+                        <image class="number-arrows" src="../../../assets/images/my-arrows-icon.png" mode="scaleToFill" />
+                    </view>
+                      
+                </view>
+            </view>
+        </view>
+    </navigator>
+</view>
+  

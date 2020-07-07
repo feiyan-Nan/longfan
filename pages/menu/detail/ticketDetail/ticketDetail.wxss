@@ -1,0 +1,122 @@
+/* pages/menu/detail/ticketDetail/ticketDetail.wxss */
+page {
+  background-color: #f5f5f5;
+}
+.logo-img,
+.icon-img,
+.reduct,
+.footer-img,
+.add {
+  width: 100%;
+}
+.header {
+  padding: 20rpx;
+  background-color: #fff;
+}
+.header-box {
+  display: flex;
+  margin: 30rpx 0;
+}
+.header-img-box {
+  width: 50rpx;
+  height: 50rpx;
+}
+.header-brief {
+  font-weight: 700;
+  margin-left: 10rpx;
+}
+.header-text {
+  margin-bottom: 30rpx;
+}
+.header-item-front {
+  font-size: 32rpx;
+  color: #ff2c2b;
+  font-weight: 700;
+}
+.header-item-queen {
+  color: #999;
+  font-size: 30rpx;
+}
+.conter-top {
+  display: flex;
+  padding: 20rpx;
+  margin-top: 30rpx;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+.conter-bottom {
+  display: flex;
+  padding: 20rpx;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-top: 1px solid #f5f5f5;
+}
+.conter-left {
+  justify-content: center;
+}
+.conter-item-front {
+  color: #000;
+  font-size: 32rpx;
+}
+.conter-item-queen {
+  font-size: 32rpx;
+  color: #ff2c2b;
+  font-weight: 700;
+}
+.conter-right {
+  display: flex;
+}
+.reduct-box {
+  width: 60rpx;
+  height: 60rpx;
+}
+.number {
+  margin: 0 20rpx;
+  align-self: center;
+}
+.add-box {
+  width: 60rpx;
+  height: 60rpx;
+}
+.footer-container {
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding: 30rpx 30rpx;
+}
+.footer {
+  display: flex;
+}
+.footer-img-box {
+  width: 100rpx;
+  height: 100rpx;
+}
+.footer-text {
+  margin: 0 10rpx 140rpx 0;
+}
+.footer-btn-box {
+  position: fixed;
+    bottom: 60rpx;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+  text-align: center;
+}
+.footer-btn {
+  font-size: 32rpx;
+  line-height: 80rpx;
+  background: #ff5266;
+  color: #fff;
+  border-radius: 5px;
+}
+/*普通样式*/  
+.stepper .normal{  
+  color: black;  
+}  
+
+/*禁用样式*/  
+.stepper .disabled{  
+  color: #ccc;  
+} 

@@ -1,0 +1,31 @@
+/* conponents/footer/footer.wxss */
+.icon{
+  width:54rpx;
+  height: 54rpx;
+}
+.tabBar{
+  width:100%;
+  position: fixed;
+  bottom:0;
+  padding:10rpx;
+  margin-left:-4rpx;
+  background:#F7F7FA;
+  font-size:30rpx;
+  color:#8A8A8A;
+  box-shadow: 6rpx 6rpx 6rpx 6rpx #aaa;
+}
+
+ .tabBar-item{
+  float:left;
+  width:33.3%;
+  text-align: center;
+  overflow: hidden;
+}
+/*当前字体颜色*/
+.tabBartext{
+  color:#ff5669;
+  font-size: 30rpx;
+}
+.navigator-hover {
+  background-color: #f7f7fa;
+}

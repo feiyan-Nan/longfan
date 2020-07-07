@@ -1,0 +1,249 @@
+<!--pages/menu/detail/prepaidDetail/prepaidDetail.wxml-->
+<view class="prepaidDetail">
+  <view class=".header-container">
+    <view class="header-img-box">
+      <image class="header-img" src="../../../../assets/images/pre-sgst-bg.png" mode="widthFix" />
+    </view>
+    <view class="header-img-left">
+      <image class="header-img" src="../../../../assets/images/singtel_1.png" mode="widthFix" />
+    </view>
+    <view class="header-img-right">
+      <image class="header-img" src="../../../../assets/images/singtel-banner.png" mode="widthFix" />
+    </view>
+  </view>
+    
+    <view class="mobile-container">
+      <view class="mobile">
+        <view class="mobile-box-area">
+          <text class="mobile-area">+65</text>
+        </view>
+        <view class="mobile-box-input">
+          <input class="mobile-input" type="number" placeholder="请输入手机号码" placeholder-class="mobile-input"></input>      
+        </view>
+      </view>
+    </view>
+      
+  <view class="select-container">
+     <view class="select">
+    <view class="select-img-box">
+      <image class="select-img" src="../../../../assets/images/pre-goods-prefix.png" mode="widthFix" />      
+    </view>
+    <text class="select-text">选择产品</text>
+  </view>
+      
+    <view class="tab">
+      <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+          <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">话费</view>
+          <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">套餐</view>
+          <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">流量</view>
+      </scroll-view>
+      <swiper class="tab-content" current="{{currentTab}}" duration="300">
+       <!-- 话费 -->
+        <swiper-item class="{{currentTab == 0}}">
+            <scroll-view scroll-y="{{true}}">
+              <!--  <block wx:for="{{[1,2,3]}}" wx:key="*this"> -->
+                      <view class="item-ans clearfix">
+                          <view class="avatar">
+                              <view class="item-avatar {{actTab==0?'actives':''}}" data-actTab="0" bindtap="pitchList">
+                                主账户$10                                
+                              </view>
+                              <view class="avatar-img-box">
+                                  <image class="avatar-img" src="../../../../assets/images/pre-hot-icon.png" mode="widthFix"/>
+                              </view>
+                              <view class="actives-box">
+                              </view>
+                          </view>
+
+                          <view class="item-avatar {{actTab==1?'actives':''}}" data-actTab="1" bindtap="pitchList">
+                                主账户$5                                
+                          </view>
+
+                          <view class="item-avatar {{actTab==2?'actives':''}}" data-actTab="2" bindtap="pitchList">
+                                主账户$20                                
+                          </view>
+
+                          <view class="item-avatar {{actTab==3?'actives':''}}" data-actTab="3" bindtap="pitchList">
+                                主账户$25                                
+                          </view>
+
+                          <view class="item-avatar {{actTab==4?'actives':''}}" data-actTab="4" bindtap="pitchList">
+                                主账户$50                               
+                          </view>
+                      </view>
+
+              <!--  </block> -->
+                <view class="footer-conter">
+                  <view class="footer-conter-box">
+                    <view class="footer-conter-top">
+                      <view class="item-text">11111111</view>
+                      <view class="item-text">22222222</view>
+                      <view class="item-text">33333333</view>
+                      <view class="item-text">44444444</view>
+                      <view class="item-text">55555555</view>
+                      <view class="item-text">66666666</view>
+                      <view class="item-text">77777777</view>
+                      <view class="item-text">88888888</view>
+                      <view class="item-text">99999999</view>
+                      <view class="item-text">00000000</view>
+                    </view>
+                    <view class="footer-conter-bottom">
+                      <view class="hint">温馨提示:</view>
+                      <view class="hint-conter">
+                      <text class="">sapasdf[jsdflkslkdfjlksdjfsdlf=gdkjfg</text>
+                      </view >
+                    </view>
+                  </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+      
+        <!-- 套餐 -->
+        <swiper-item class="{{ currentTab == 1}}">
+              <view class="item-ans clearfix currentTab == 1 " hidden="{{conterShow}}">
+                    <view class="avatar">
+                          <view class="item-setmeal {{actTab==0?'actives':''}}" data-actTab="0" bindtap="pitchList">
+                                HOT$55                                
+                          </view>
+
+                          <view class="actives-box">
+                              </view>
+                          </view>
+
+                          <view class="item-setmeal {{actTab==1?'actives':''}}" data-actTab="1" bindtap="pitchList">
+                                SuperHot$128                                
+                          </view>
+
+                          <view class="item-setmeal {{actTab==2?'actives':''}}" data-actTab="2" bindtap="pitchList">
+                                Bonus$30                                
+                          </view>
+
+                          <view class="item-setmeal item-sell {{actTab==3?'actives':''}}" data-actTab="3" bindtap="pitchList">
+                                RedHot$30 
+                                <view class="avatar-img-box-sell">
+                                  <image class="avatar-img" src="../../../../assets/images/pre-hot-icon.png" mode="widthFix"/>
+                          </view>                              
+                          </view>
+
+                          <view class="item-setmeal item-sell {{actTab==4?'actives':''}}" data-actTab="4" bindtap="pitchList">
+                                超值中国$22 
+                                <view class="avatar-img-box-sell">
+                                  <image class="avatar-img" src="../../../../assets/images/pre-hot-icon.png" mode="widthFix"/>
+                          </view>                              
+                          </view>
+
+                          <view class="item-setmeal {{actTab==5?'actives':''}}" data-actTab="5" bindtap="pitchList">
+                                MyanmarSaver$23                                
+                          </view>
+
+                          <view class="item-setmeal {{actTab==6?'actives':''}}" data-actTab="6" bindtap="pitchList">
+                                LocalSaver$18                               
+                          </view>
+                      </view>
+                      <block>
+                        <view class="footer-conter">
+                          <view class="footer-conter-box">
+                            <view class="footer-conter-top">
+                              <view class="item-text">11111111</view>
+                              <view class="item-text">22222222</view>
+                              <view class="item-text">33333333</view>
+                              <view class="item-text">44444444</view>
+                              <view class="item-text">55555555</view>
+                              <view class="item-text">66666666</view>
+                              <view class="item-text">77777777</view>
+                              <view class="item-text">88888888</view>
+                              <view class="item-text">99999999</view>
+                              <view class="item-text">00000000</view>
+                            </view>
+                            <view class="footer-conter-bottom">
+                              <view class="hint">温馨提示:</view>
+                              <view class="hint-conter">
+                              <text class="">sapasdf[jsdflkslkdfjlksdjfsdlf=gdkjfg</text>
+                              </view >
+                            </view>
+                          </view>
+                        </view>
+                      </block>
+        </swiper-item>
+        <!-- 套餐 -->
+        <swiper-item class="">
+                          <view class="item-ans clearfix currentTab == 1 " hidden="{{conterShow}}">
+                    <view class="avatar">
+                          <view class="item-setmeal {{actTab==0?'actives':''}}" data-actTab="0" bindtap="pitchList">
+                                7天1GB                                
+                          </view>
+
+                          <view class="actives-box">
+                              </view>
+                          </view>
+
+                          <view class="item-setmeal {{actTab==1?'actives':''}}" data-actTab="1" bindtap="pitchList">
+                                7天1.5GB                                
+                          </view>
+
+                          <view class="item-setmeal item-sell {{actTab==2?'actives':''}}" data-actTab="2" bindtap="pitchList">
+                                30天1GB
+                                <view class="avatar-img-box-sell">
+                                  <image class="avatar-img" src="../../../../assets/images/pre-hot-icon.png" mode="widthFix"/>
+                                </view>                                
+                          </view>
+
+                          <view class="item-setmeal {{actTab==3?'actives':''}}" data-actTab="3" bindtap="pitchList">
+                                30天1.5GB 
+                          </view>
+
+                          <view class="item-setmeal item-sell {{actTab==4?'actives':''}}" data-actTab="4" bindtap="pitchList">
+                                30天3GB 
+                                <view class="avatar-img-box-sell ">
+                                  <image class="avatar-img" src="../../../../assets/images/pre-hot-icon.png" mode="widthFix"/>
+                                </view>                              
+                          </view>
+
+                          <view class="item-setmeal {{actTab==5?'actives':''}}" data-actTab="5" bindtap="pitchList">
+                                30天4GB                                
+                          </view>
+
+                          <view class="item-setmeal item-sell {{actTab==6?'actives':''}}" data-actTab="6" bindtap="pitchList">
+                                30天5GB
+                                <view class="avatar-img-box-sell">
+                                  <image class="avatar-img" src="../../../../assets/images/pre-hot-icon.png" mode="widthFix"/>
+                                </view>                               
+                          </view>
+
+                          <view class="item-setmeal {{actTab==7?'actives':''}}" data-actTab="7" bindtap="pitchList">
+                                新马漫游28D1G                               
+                          </view>
+                      </view>
+                        <view class="footer-conter">
+                          <view class="footer-conter-box">
+                            <view class="footer-conter-top">
+                              <view class="item-text">11111111</view>
+                              <view class="item-text">22222222</view>
+                              <view class="item-text">33333333</view>
+                              <view class="item-text">44444444</view>
+                              <view class="item-text">55555555</view>
+                              <view class="item-text">66666666</view>
+                              <view class="item-text">77777777</view>
+                              <view class="item-text">88888888</view>
+                              <view class="item-text">99999999</view>
+                              <view class="item-text">00000000</view>
+                            </view>
+                            <view class="footer-conter-bottom">
+                              <view class="hint">温馨提示:</view>
+                              <view class="hint-conter">
+                              <text class="">sapasdf[jsdflkslkdfjlksdjfsdlf=gdkjfg</text>
+                              </view >
+                            </view>
+                          </view>
+                        </view>
+        </swiper-item>         
+      </swiper>
+    </view>
+  </view>
+    <navigator class="" target="" url="../../../pay/confirm/confirm">
+      <view class="footer-btn-box">
+          <view class="footer-btn">立即购买</view>
+      </view>
+    </navigator>
+      
+</view>
+  

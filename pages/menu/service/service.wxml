@@ -1,0 +1,18 @@
+<!--pages/menu/service/service.wxml-->
+<view class="service">
+      <view class="search">
+        <view class="search-img-box">
+          <image class="search-img" src="../../../assets/images/ticket-search-icon.png" mode="widthFix" />
+        </view>
+        <view class="search-input-box">
+          <input class="search-input" auto-focus placeholder="搜索商品..."/>
+      </view>
+      </view>
+
+      <view class="accomplish-box">
+        <text class="accomplish">
+          暂无数据
+        </text>
+      </view>
+</view>
+  
